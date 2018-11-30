@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.title-group {
+  max-width: $text-max-width;
+  @include box($blh);
+}
+
+.abstract,
+.article-content {
+  padding-top: $blh;
+
+  @media screen and (min-width: $bp1) {
+    padding: $blh * 2 0 $blh;
+  }
+}
+
+.abstract {
+  @media screen and (min-width: $bp2) {
+    padding: $blh * 3 0 $blh * 2;
+  }
+
+  @media screen and (min-width: $bp3) {
+    padding: $blh * 4 0 $blh * 3;
+  }
+
+  @media screen and (min-width: $bp3) {
+    padding: $blh * 5 0 $blh * 4;
+  }
+}
+
+footer,
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.container {
+  @include centered($bp1);
+
+  @media screen and (min-width: $bp1) {
+    @include centered($bp2);
+  }
+
+  @media screen and (min-width: $bp2) {
+    @include centered($bp3);
+  }
+}
+
+main {
+
+  .container {
+    @media screen and (min-width: $bp1) {
+      flex-direction: row;
+    }
+  }
+
+  header {
+    .container {
+      @media screen and (min-width: $bp1) {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+img {
+  width: 100%;
+  height: $blh * 10;
+  object-fit: contain;
+
+  &::before {
+    content: none !important;
+  }
+}
+
+li {
+  @include box($blh);
+}
+
+.list-texts {
+  list-style-type: disc;
+  padding-left: $blh * 2;
+}
+
+figure {
+  @include centered($text-max-width);
+  margin-bottom: $blh;
+  
+  figcaption {
+    padding: 0 $blh;
+  }
+
+  @media only screen and (min-width: $bp1) {
+    @include box($blh);    
+  }
+
+  @media only screen and (min-width: $bp2) {
+    margin-left: 0;    
+  }  
+}
+
+footer {
+  padding-top: $blh;
+  
+  p {
+    text-align: center;
+    @include centered($bp1);
+    @include box($blh);
+    
+    .logo {
+      display: inline;
+      height: $blh;
+      width: auto;
+      vertical-align: middle;
+    }
+  } 
+}

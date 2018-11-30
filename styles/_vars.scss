@@ -1,0 +1,38 @@
+/* COLORS */
+$enfasis-1:  	hsla(25%, 100%, 40%, 1);
+$enfasis-2: 	hsla(25%, 100%, 50%, 1);
+$bg-1:       	hsla(205%, 50%, 10%, 1);
+$bg-2:      	hsla(205%, 50%, 50%, 1);
+$bg-3:      	hsla(205%, 50%, 90%, 1);
+$text-1:     	hsla(0%, 0%, 0%, 0.7);
+$text-2:   	hsla(0%, 0%, 0%, 0.9);
+$text-3:    	hsla(205%, 50%, 50%, 1);
+$text-4:  	hsla(100%, 100%, 100%, 0.8);
+
+/* FONTS */
+/* Families */
+$fonts-url:           'https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700';
+$default-font-family: "Open Sans", sans-serif;
+$titles-font-family:  "Roboto", sans-serif;
+
+/* Weights */
+$normal-fw: 400;
+$bold-fw:   700;
+
+/* VERTICAL RHYTHM */
+$bfs:     1rem;
+$spacing: 1.5;
+$scale:   1.25;
+$blh:     $bfs * $spacing;
+
+/* LAYOUT */
+$text-max-width: $bfs * 35;
+
+/* BREAK POINTS */
+$bp1: $text-max-width;
+$bp2: $text-max-width * 1.5;
+$bp3: $text-max-width * 2;
+$bp4: $text-max-width * 2.5;
+
+/* OTHERS */
+$aside-base-width: $blh * 6;

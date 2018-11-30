@@ -1,0 +1,52 @@
+/* BACKGROUNDS */
+@mixin bg-img-overlay($overlay-color, $opacity, $position) {
+  background-size: cover;
+  background-position: $position;
+  background-repeat: no-repeat;
+
+  > section, > div, > ul, > li {
+    background-color: rgba($overlay-color, $opacity);
+  }
+}
+
+/* VERTICAL RHYTHM */
+@mixin type-setting($level, $bfs, $scale) {
+  $font-size: ts-font-size($level, $bfs, $scale);
+  
+  font-size: $font-size;
+  line-height: vr-line-height($font-size, $blh);
+}
+
+/* ELEMENTS */
+@mixin solid($bg-color, $bg-color-hover, $color, $color-hover, $padding) {
+  background-color: $bg-color;
+  display: inline-block;
+  padding: $padding;
+  color: $color;
+  
+  &:hover {
+    background-color: $bg-color-hover;
+    color: $color-hover;
+  }
+}
+
+/* LAYOUT */
+@mixin circle($diameter) {
+  width: $diameter;
+  height: $diameter;
+  border-radius: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin centered($max-width) {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+@mixin box($blh) {
+  padding: 0 $blh;
+  margin-bottom: $blh;
+}

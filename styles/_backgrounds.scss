@@ -1,0 +1,17 @@
+button {
+  @include solid($enfasis-1, $enfasis-2, $text-4, white, $blh * 0.5 $blh);
+}
+
+header {
+	background-color: $bg-1;
+  @include bg-img-overlay($bg-1, 0.7, top);
+}
+
+main,
+aside {
+  background-color: $bg-3;
+}
+
+footer {
+	background-color: $bg-1;
+}

@@ -1,0 +1,83 @@
+/* FONTS */
+
+@import url($fonts-url);
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.meta {
+  font-family: $titles-font-family;
+  font-weight: $bold-fw;
+}
+
+/* COLORS */
+
+body {
+  color: $text-1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text-2;
+}
+
+header,
+footer {
+  color: $text-3;
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $text-4;
+  }
+}
+
+.logo {
+  opacity: 0.9;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+/* LINKS */
+
+a {
+  text-decoration: none;
+  color: $enfasis-1;
+  
+  &:hover {
+    color: $enfasis-2;
+  }
+}
+
+/* VERTICAL RHYTHM */
+
+body {@include type-setting(0, $bfs, $scale)}
+
+h1 {@include type-setting(5, $bfs, $scale)}
+h2 {@include type-setting(4, $bfs, $scale)}
+h3 {@include type-setting(3, $bfs, $scale)}
+h4 {@include type-setting(2, $bfs, $scale)}
+h5 {@include type-setting(1, $bfs, $scale)}
+h6 {@include type-setting(0, $bfs, $scale)}
+
+figcaption {@include type-setting(-1, $bfs, $scale)}
+
+i {@include type-setting(2, $bfs, $scale)}
+
+.toggle-nav i {@include type-setting(3, $bfs, $scale)}

@@ -1,0 +1,77 @@
+.feed-widget {
+	padding-top: $blh;
+
+	figcaption,
+	h6,
+	p {
+		padding: 0 $blh * 0.5;
+
+		@media screen and (min-width: $bp1) {
+			padding: 0 $blh;				
+		}
+	}
+
+	h6 {
+		color: $text-2;
+	}
+
+	figure {
+		width: 100%;
+
+		@media screen and (min-width: $bp1) {
+			padding: 0;
+		}
+	}
+
+	article {
+		background-color: $bg-2;
+		color: $text-4;
+		display: flex;
+		flex-flow: column nowrap;
+		border-radius: 5px;
+		height: 100%;
+
+		&:hover {
+			box-shadow: 1px 1px 10px 0px $text-2;
+		}
+	}
+
+	a {
+		display: inline-block;
+		height: 100%;
+	}
+
+	li {
+		padding: 0 $blh * 0.5;
+
+		@media screen and (min-width: $bp1) {
+			flex: 0 0 50%;	
+		}
+
+		@media screen and (min-width: $bp2) {
+			flex: 0 0 33.33%;	
+		}
+	}
+
+	ul {
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	@media screen and (min-width: $bp1) {
+		padding-bottom: $blh;
+	}
+
+	@media screen and (min-width: $bp2) {
+		padding-bottom: $blh * 2;
+	}
+
+	@media screen and (min-width: $bp3) {
+		padding-bottom: $blh * 3;
+	}
+
+	@media screen and (min-width: $bp4) {
+		padding-bottom: $blh * 4;
+	}	
+
+}
