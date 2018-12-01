@@ -4,14 +4,10 @@ button {
 
 header {
 	background-color: $bg-1;
-  @include bg-img-overlay($bg-1, 0.7, top);
 }
 
-main,
-aside {
-  background-color: $bg-3;
-}
-
-footer {
-	background-color: $bg-1;
+main {
+	header {
+		@include bg-img-overlay($bg-2, 0.5, center);
+	}
 }

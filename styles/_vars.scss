@@ -1,13 +1,12 @@
 /* COLORS */
-$enfasis-1:  	hsla(25%, 100%, 40%, 1);
-$enfasis-2: 	hsla(25%, 100%, 50%, 1);
-$bg-1:       	hsla(205%, 50%, 10%, 1);
-$bg-2:      	hsla(205%, 50%, 50%, 1);
-$bg-3:      	hsla(205%, 50%, 90%, 1);
-$text-1:     	hsla(0%, 0%, 0%, 0.7);
-$text-2:   	hsla(0%, 0%, 0%, 0.9);
-$text-3:    	hsla(205%, 50%, 50%, 1);
-$text-4:  	hsla(100%, 100%, 100%, 0.8);
+$enfasis-1:  	#11977e;
+$enfasis-2: 	#17CCAA;
+$bg-1:       	white;
+$bg-2:      	black;
+$text-1:     	hsla(0%, 0%, 0%, 0.5);
+$text-2:   		hsla(0%, 0%, 0%, 0.9);
+$text-3:    	hsla(100%, 100%, 100%, 0.8);
+$text-4:    	white;
 
 /* FONTS */
 /* Families */
@@ -22,17 +21,16 @@ $bold-fw:   700;
 /* VERTICAL RHYTHM */
 $bfs:     1rem;
 $spacing: 1.5;
-$scale:   1.25;
+$scale:   1.2;
 $blh:     $bfs * $spacing;
 
 /* LAYOUT */
-$text-max-width: $bfs * 35;
+$text-max-width: $bfs * 37;
 
 /* BREAK POINTS */
-$bp1: $text-max-width;
-$bp2: $text-max-width * 1.5;
-$bp3: $text-max-width * 2;
-$bp4: $text-max-width * 2.5;
+$bp1: 		$text-max-width * 1.5;
+$bp2: 		$text-max-width * 2;
+$bp-nav: 	800px;
 
 /* OTHERS */
 $aside-base-width: $blh * 6;

@@ -1,0 +1,16 @@
+{
+  "slides": [
+    {
+      "text": "JSON Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quae nisi ipsam",
+      "image-url": "/pruebas/titamedia/img/image-big.png"
+    },
+    {
+      "text": "JSON Slide 2",
+      "image-url": "/pruebas/titamedia/img/image-big2.png"
+    },
+    {
+      "text": "JSON Slide 3",
+      "image-url": "/pruebas/titamedia/img/image-big3.jpg"
+    }  
+  ]
+}

@@ -5,7 +5,8 @@
 @import "backgrounds";
 @import "type";
 @import "layout";
-@import "widgets/responsive-nav";
-@import "widgets/responsive-nav-custom";
-@import "widgets/share-widget";
-@import "widgets/feed-widget";
+@import "widgets/responsive-nav/responsive-nav";
+@import "widgets/responsive-nav/responsive-nav-custom";
+@import "widgets/glide/glide.core";
+@import "widgets/glide/glide.theme";
+@import "widgets/glide/glide-custom";

@@ -1,0 +1,68 @@
+.glide {
+	h1 {
+		color: $text-4;
+		font-weight: $bold-fw;
+	}
+
+	li {
+		@include bg-img-overlay($bg-2, 0.5, center);
+		padding: 0;
+		margin: 0;
+		height: $blh * 18;
+
+		@media screen and (min-width: $bp1) {
+			height: $blh * 22;
+		}
+	}
+
+	.overlay,
+	.container {
+		height: 100%;
+	}
+
+	.container {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+	}
+
+	.abstract {
+		width: 100%;
+		padding: 0;
+	}
+
+	h1 {
+		margin: 0;
+
+		@media screen and (min-width: $bp1) {
+			padding: 0 $blh * 2;
+		}
+	}
+
+	button {
+		border: none;
+		padding: $blh * 0.25;
+		color: $enfasis-1;
+
+		&:hover {
+			background-color: transparent;
+			color: $enfasis-2;
+		}
+
+		@media screen and (min-width: $bp1) {
+			i {
+				@include type-setting(5, $bfs, $scale);	
+			}
+			
+			padding: $blh * 0.25 $blh * 0.5;
+		}
+	}
+
+	.glide__arrow--left {
+		left: 0;
+	}
+
+	.glide__arrow--right {
+		right: 0;
+	}
+}

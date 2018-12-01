@@ -2,78 +2,123 @@
   box-sizing: border-box;
 }
 
+h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p,
-.title-group {
-  max-width: $text-max-width;
+p {
+  @include centered($text-max-width);
   @include box($blh);
+}
+
+h1 {
+  max-width: $text-max-width * 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: $blh * 0.5;
+
+  &:after {
+    content: "";
+    display: block;
+    width: $text-max-width * 0.25;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: calc(#{$blh * 0.5} - 1px);
+    background-color: $enfasis-1;
+  }
+
+  @media screen and (min-width: $bp1) {
+    &:after {
+      width: $text-max-width * 0.5;
+    }
+  }
+}
+
+p {
+  text-align: justify;
 }
 
 .abstract,
 .article-content {
   padding-top: $blh;
-
-  @media screen and (min-width: $bp1) {
-    padding: $blh * 2 0 $blh;
-  }
 }
 
 .abstract {
-  @media screen and (min-width: $bp2) {
-    padding: $blh * 3 0 $blh * 2;
-  }
-
-  @media screen and (min-width: $bp3) {
-    padding: $blh * 4 0 $blh * 3;
-  }
-
-  @media screen and (min-width: $bp3) {
+  @media screen and (min-width: $bp1) {
     padding: $blh * 5 0 $blh * 4;
+  }
+
+  @media screen and (min-width: $bp2) {
+    padding: $blh * 10 0 $blh * 9;
   }
 }
 
-footer,
+.article-content {
+  img {
+    object-position: bottom;
+  }
+
+  @media screen and (min-width: $bp1) {
+    padding: $blh * 2 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    
+    figure,
+    .section-content {
+      width: 50%;
+      flex: 0 0 auto;
+    }
+  }
+}
+
+.more {
+  text-align: center;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
 .container {
   display: flex;
   flex-flow: column nowrap;
-}
-
-.container {
   @include centered($bp1);
 
   @media screen and (min-width: $bp1) {
     @include centered($bp2);
   }
+}
 
-  @media screen and (min-width: $bp2) {
-    @include centered($bp3);
+header {
+  @media screen and (min-width: $bp-nav) {
+    padding-top: $blh;
   }
 }
 
 main {
-
-  .container {
-    @media screen and (min-width: $bp1) {
-      flex-direction: row;
-    }
-  }
-
   header {
-    .container {
-      @media screen and (min-width: $bp1) {
-        flex-direction: column;
-      }
+    @media screen and (min-width: $bp-nav) {
+      padding-top: 0;
     }
   }
 }
 
 img {
+  display: block;
   width: 100%;
-  height: $blh * 10;
+  height: 100%;
   object-fit: contain;
 
   &::before {
@@ -92,15 +137,6 @@ li {
 
 figure {
   @include centered($text-max-width);
-  margin-bottom: $blh;
-  
-  figcaption {
-    padding: 0 $blh;
-  }
-
-  @media only screen and (min-width: $bp1) {
-    @include box($blh);    
-  }
 
   @media only screen and (min-width: $bp2) {
     margin-left: 0;    

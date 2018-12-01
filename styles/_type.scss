@@ -14,7 +14,13 @@ h5,
 h6,
 .meta {
   font-family: $titles-font-family;
-  font-weight: $bold-fw;
+  font-weight: $normal-fw;
+}
+
+header {
+  h1 {
+    font-weight: $bold-fw;
+  }
 }
 
 /* COLORS */
@@ -32,10 +38,7 @@ h6 {
   color: $text-2;
 }
 
-header,
-footer {
-  color: $text-3;
-  
+header {
   h1,
   h2,
   h3,
@@ -71,7 +74,7 @@ body {@include type-setting(0, $bfs, $scale)}
 
 h1 {@include type-setting(5, $bfs, $scale)}
 h2 {@include type-setting(4, $bfs, $scale)}
-h3 {@include type-setting(3, $bfs, $scale)}
+h3 {@include type-setting(2, $bfs, $scale)}
 h4 {@include type-setting(2, $bfs, $scale)}
 h5 {@include type-setting(1, $bfs, $scale)}
 h6 {@include type-setting(0, $bfs, $scale)}
